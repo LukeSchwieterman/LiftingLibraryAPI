@@ -28,8 +28,8 @@ namespace LiftingLibraryAPI.Models
             CreatedAt = DateTime.Now;
         }
 
-        public List<Workout> Workouts = new List<Workout>();
-        public List<WorkoutDetail> WorkoutDetails = new List<WorkoutDetail>();
+        public List<Workout> Workouts { get; set; } = new List<Workout>();
+        public List<WorkoutDetail> WorkoutDetails { get; set; } = new List<WorkoutDetail>();
     }
 
     public class RegisterUser

@@ -28,7 +28,7 @@ namespace LiftingLibraryAPI.Controllers
             _logger = logger;          
         }
 
-        [HttpGet("/Email/{email}")]
+        [HttpGet("by-email/{email}")]
         public async Task<ActionResult<UserContext>> GetUser(string email)
         {
             try
@@ -54,7 +54,7 @@ namespace LiftingLibraryAPI.Controllers
             }
         }
 
-        [HttpGet("/UserId/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<UserContext>> GetUser(int id)
         {
             try
