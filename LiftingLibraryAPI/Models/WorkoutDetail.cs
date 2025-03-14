@@ -18,7 +18,7 @@ namespace LiftingLibraryAPI.Models
         public int Reps { get; set; }
         public int Weight { get; set; }
 
-        [ForeignKey("WorkoutID")]
+        [ForeignKey("WorkoutId")]
         public Workout Workout { get; set; }
         [ForeignKey("UserID")]
         public User User { get; set; }

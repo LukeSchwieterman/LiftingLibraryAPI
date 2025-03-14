@@ -12,7 +12,7 @@ namespace LiftingLibraryAPI.Models
         public DateTime Date { get; set; }
         public string? Notes { get; set; }
 
-        public List<WorkoutDetail> WorkoutDetails = new List<WorkoutDetail>();
+        public List<WorkoutDetail> WorkoutDetails { get; set; } = new List<WorkoutDetail>();
         [ForeignKey("UserId")]
         public User User { get; set; }
     }
